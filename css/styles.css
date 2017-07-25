@@ -40,7 +40,6 @@ header {
 }
 
 hr {
-  color: #6f930f;
   background-color: #6f930f;
   height: 2px;
 }
@@ -110,7 +109,7 @@ li a {
   .logo {
     max-width: 50%;
   }
-  
+
   hr {
     height: 1px;
   }
