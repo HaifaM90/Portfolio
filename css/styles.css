@@ -4,6 +4,7 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 header {
@@ -14,21 +15,30 @@ header {
 
 .logo-box {
   order: -1;
+  margin: auto 0;
 }
 
 .logo {
   width: 100px;
   max-width: 100%;
   border-radius: 50%;
-
 }
 
 .main-title {
   text-align: right;
-  font-size: 1em;
-  font-family: 'Lato',serif;
+
   order: 0;
 }
+
+.thin-text
+{
+    font-weight: 100;
+}
+
+.super-text {
+    font-size: 60px;
+}
+
 hr {
   color: #6f930f;
   background-color: #6f930f;
@@ -47,30 +57,87 @@ hr {
 }
 
 .work-title {
-  font-weight: bold;
-  color: #7d97ad;
+  color: #6a5769;
 }
 
 .featured-img {
   width: 100%;
   height: auto;
 }
+.sup-text {
+  font-size: 20px;
+}
 
+footer {
+  border-top: 2px solid #f6f6f6;
+  padding: 10px 0;
+}
+ul {
+  margin: 0 auto;
+}
+ul li {
+  display: inline;
+  padding-right: 20px;
+}
+li a {
+  color: #6f930f;
+  font-size: 20px;
+}
 @media screen and (max-width: 469px) {
 
-  .main-title>p {
-    font-size: 1em;
+  .logo {
+    max-width: 75%;
+  }
+
+  hr {
+    height: 1px;
+  }
+
+  .super-text {
+    font-size: 20px;
     text-align: right;
   }
-  .main-title>h1 {
-    font-size: 1.5em;
+
+  .main-title>h3 {
+    font-size: 10px;
+    text-align: right;
+  }
+
+}
+
+@media screen and (min-width: 470px) and (max-width: 700px) {
+
+  .logo {
+    max-width: 50%;
+  }
+  
+  hr {
+    height: 1px;
+  }
+
+  .super-text {
+    font-size: 30px;
+    text-align: right;
+  }
+
+  .main-title>h3 {
+    font-size: 15px;
     text-align: right;
   }
 }
+
 
 @media screen and (max-width: 990px) {
   * {
     margin: 0 auto;
   }
+  .sub-work {
+    padding: 10px 0;
+    border-bottom: 1px solid #f6f6f6;
+  }
+
+[class='sub-work']:last-of-type {
+    border-bottom:  0px solid #fff;
  }
+
 }
